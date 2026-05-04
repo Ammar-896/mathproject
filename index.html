@@ -10,17 +10,17 @@
     --gold: #C9A84C;
     --gold-light: #E8C96B;
     --gold-pale: #F5E8C0;
-    --dark: #0D0D0D;
-    --dark-2: #161616;
-    --dark-3: #1E1D1A;
+    --dark: #1A1812;
+    --dark-2: #221F18;
+    --dark-3: #2A2820;
     --ivory: #F9F5EC;
     --ivory-2: #EDE7D4;
-    --text-light: #D4C9A8;
-    --text-muted: #7A7060;
+    --text-light: #E2D9C0;
+    --text-muted: #9A8E78;
     --teal: #2A5C5E;
     --teal-light: #3D7A7C;
     --red-accent: #8B2E2E;
-    --border: rgba(201,168,76,0.25);
+    --border: rgba(201,168,76,0.35);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,7 +28,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--dark);
+    background: #1A1812;
     color: var(--text-light);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -41,8 +41,8 @@
     position: fixed;
     inset: 0;
     background-image:
-      radial-gradient(circle at 15% 50%, rgba(201,168,76,0.04) 0%, transparent 50%),
-      radial-gradient(circle at 85% 20%, rgba(42,92,94,0.06) 0%, transparent 40%);
+      radial-gradient(circle at 15% 50%, rgba(201,168,76,0.08) 0%, transparent 50%),
+      radial-gradient(circle at 85% 20%, rgba(42,92,94,0.10) 0%, transparent 40%);
     pointer-events: none;
     z-index: 0;
   }
@@ -52,7 +52,7 @@
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
     padding: 18px 60px;
-    background: rgba(13,13,13,0.92);
+    background: rgba(28,25,18,0.94);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
   }
@@ -191,7 +191,7 @@
   }
 
   .stat-box {
-    background: rgba(13,13,13,0.8);
+    background: rgba(30,27,20,0.85);
     padding: 24px 20px;
     text-align: center;
   }
@@ -353,7 +353,7 @@
   }
 
   .cost-table tbody tr:hover {
-    background: rgba(201,168,76,0.04);
+    background: rgba(201,168,76,0.07);
   }
 
   .cost-table td {
@@ -577,7 +577,7 @@
     position: absolute; left: -37px; top: 4px;
     width: 14px; height: 14px;
     border: 1px solid var(--gold);
-    background: var(--dark);
+    background: #1A1812;
     transform: rotate(45deg);
   }
 
@@ -696,7 +696,7 @@
 
   /* ─── FULL-WIDTH BAND ─── */
   .band {
-    background: rgba(201,168,76,0.04);
+    background: rgba(201,168,76,0.07);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
@@ -1084,9 +1084,9 @@
     </div>
     <div class="team-card reveal reveal-d2">
       <div class="member-num">02</div>
-      <div class="member-name">Yousef<br/>Omar</div>
+      <div class="member-name">Yousif<br/>Omar</div>
       <div class="member-role">Excel & Costs</div>
-      <p class="member-desc">Yousef made the Excel sheet and calculated the cost for each item. He figured out the unit rates for concrete, steel, and labour, added 10% contingency, and got the total to around 2M AED.</p>
+      <p class="member-desc">Yousif made the Excel sheet and calculated the cost for each item. He figured out the unit rates for concrete, steel, and labour, added 10% contingency, and got the total to around 2M AED.</p>
     </div>
     <div class="team-card reveal reveal-d3">
       <div class="member-num">03</div>
@@ -1634,7 +1634,7 @@
   </div>
   <div class="footer-right">
     <div class="footer-course">Mathematics — Group Project</div>
-    <div class="footer-names">Ammar Rabie · Yousef Omar · Asadel Rizal</div>
+    <div class="footer-names">Ammar Rabie · Yousif Omar · Asadel Rizal</div>
   </div>
 </footer>
 
