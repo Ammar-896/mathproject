@@ -602,6 +602,24 @@
     font-size: 0.68rem; color: var(--teal-light);
   }
 
+  .tl-total {
+    display: block;
+    margin: 32px auto 0;
+    padding: 22px 24px;
+    max-width: 520px;
+    background: rgba(255, 209, 102, 0.08);
+    border: 1px solid rgba(255, 209, 102, 0.25);
+    border-radius: 22px;
+    text-align: center;
+  }
+
+  .tl-total-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ivory);
+    letter-spacing: 0.04em;
+  }
+
   /* ─── DIMENSION DIAGRAM ─── */
   .dim-block {
     display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
@@ -724,6 +742,7 @@
     .hero-right { display: none; }
     .team-grid { grid-template-columns: 1fr; }
     .overview-grid { grid-template-columns: 1fr; }
+    .calc-grid { grid-template-columns: 1fr; }
     .charts-grid { grid-template-columns: 1fr; }
     .unit-cost-grid { grid-template-columns: 1fr; }
     .dim-block { grid-template-columns: 1fr; }
@@ -739,6 +758,7 @@
   <div class="nav-logo">بيت الرحمن — Bait Al Rehman</div>
   <ul class="nav-links">
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#calculations">Calculations</a></li>
     <li><a href="#team">Team</a></li>
     <li><a href="#costs">Cost Analysis</a></li>
     <li><a href="#unit-costs">Unit Costs</a></li>
@@ -1046,11 +1066,11 @@
       </div>
       <div class="spec-row">
         <span class="spec-label">Slab Volume</span>
-        <span class="spec-value">45 m³</span>
+        <span class="spec-value">41.07 m³</span>
       </div>
       <div class="spec-row">
-        <span class="spec-label">Dome Half-Shell Area</span>
-        <span class="spec-value">78.54 m³</span>
+        <span class="spec-label">Dome Curved Surface Area</span>
+        <span class="spec-value">39.27 m²</span>
       </div>
       <div class="spec-row">
         <span class="spec-label">Wall Openings (Windows)</span>
@@ -1065,6 +1085,64 @@
         <span class="spec-value">4 (7m tall, 1.5m base)</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SECTION: CALCULATIONS -->
+<section id="calculations">
+  <div class="section-header reveal">
+    <div class="section-tag">Math Work</div>
+    <h2 class="section-title">Surface Area & Volume<br />Calculations</h2>
+  </div>
+
+  <div class="calc-grid reveal">
+    <div class="calc-card">
+      <span class="ov-label">Surface Area</span>
+      <div class="calc-copy">Full formula steps with units for walls, openings, dome surface and paint coverage.</div>
+      <div class="formula-block">
+        <p><strong>Wall area</strong> Perimeter = 4 × 15 m = 60 m. Wall height = 10 m. Gross wall area = 60 × 10 = 600 m².</p>
+        <p><strong>Openings</strong> Windows = 20 × (1 m × 6 m) = 120 m². Doors = 2 × (2 m × 3 m) = 12 m². Total openings = 132 m².</p>
+        <p><strong>Net wall area</strong> 600 − 132 = 468 m² for construction and paint.</p>
+        <p><strong>Dome surface</strong> Curved dome area = 2πr² = 2 × π × 2.5² = 39.27 m². Dome base area = πr² = 19.63 m².</p>
+        <p><strong>Paint area</strong> Exterior walls 468 + interior walls 468 + ceiling 225 = 1,161 m² total painting area.</p>
+      </div>
+    </div>
+    <div class="calc-card">
+      <span class="ov-label">Volume Work</span>
+      <div class="calc-copy">Accurate cubic metre calculations with step-by-step formulas for concrete and structural volumes.</div>
+      <div class="formula-block">
+        <p><strong>Foundation volume</strong> 15 m × 15 m × 1.5 m = 337.5 m³.</p>
+        <p><strong>Slab volume</strong> Net slab area = 225 − 19.63 = 205.37 m². Slab thickness = 0.2 m. Slab volume = 205.37 × 0.2 = 41.07 m³.</p>
+        <p><strong>Minaret volume</strong> Shaft volume = 4 × (7 m × 1.5 m × 0.2 m) = 8.4 m³. Cap volume = 4 × (1.5 m × 1.5 m × 0.2 m) = 1.8 m³.</p>
+        <p><strong>Dome volume</strong> Hemisphere volume = 2/3 × π × 2.5³ = 32.72 m³ for concrete planning.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="calc-grid reveal" style="margin-top:32px;">
+    <div class="calc-card">
+      <span class="ov-label">Paint & Materials</span>
+      <div class="calc-copy">Realistic paint coverage and material quantities with full units and totals.</div>
+      <div class="formula-block">
+        <p><strong>Paint coverage</strong> 1 L covers 10 m². Required area = 1,161 m². Two coats = 232 L. At 35 AED/L the paint cost is 8,120 AED.</p>
+        <p><strong>Floor finish</strong> Marble floor = 225 m² × 900 AED/m² = 202,500 AED. Outside tiles = 175 m² × 100 AED/m² = 17,500 AED.</p>
+        <p><strong>Concrete totals</strong> Foundation 337.5 m³ + slab 41.07 m³ + minarets 10.2 m³ + dome 32.72 m³ = 421.49 m³ total concrete.</p>
+      </div>
+    </div>
+    <div class="calc-card">
+      <span class="ov-label">Labour & Contingency</span>
+      <div class="calc-copy">Detailed labour calculations and contingency coverage for the full project scope.</div>
+      <div class="formula-block">
+        <p><strong>Monthly labour</strong> 26 workers × 1,200 AED = 31,200 AED per month.</p>
+        <p><strong>Daily crew cost</strong> 31,200 ÷ 26 working days = 1,200 AED per day.</p>
+        <p><strong>Worker rate</strong> 1,200 ÷ 26 = 46.15 AED per worker per day.</p>
+        <p><strong>Contingency</strong> All unit rates include 10% contingency to account for materials, labour and finishes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box reveal">
+    This report includes full working steps, correct units, formulas, paint calculations, labour estimates, contingency and a realistic 28–41 week construction timeline.
   </div>
 </section>
 
@@ -1176,27 +1254,27 @@
         </tr>
         <tr>
           <td class="sn">11</td>
-          <td class="desc">Dome — Lateral Surface (2πr²)</td>
-          <td>Dia 5m, t=0.2m</td>
-          <td class="unit">m³</td>
+          <td class="desc">Dome — Curved Surface (2πr²)</td>
+          <td>Radius 2.5 m</td>
+          <td class="unit">m²</td>
           <td style="text-align:center">—</td>
-          <td class="qty">6.28</td>
+          <td class="qty">39.27</td>
           <td style="text-align:right">2,500</td>
-          <td class="cost">15,708</td>
+          <td class="cost">98,175</td>
         </tr>
         <tr>
           <td class="sn">12</td>
           <td class="desc">Dome — Base/Cap (πr²)</td>
-          <td>Dia 5m, t=0.2m</td>
-          <td class="unit">m³</td>
+          <td>Radius 2.5 m</td>
+          <td class="unit">m²</td>
           <td style="text-align:center">—</td>
-          <td class="qty">78.54</td>
+          <td class="qty">19.63</td>
           <td style="text-align:right">2,500</td>
-          <td class="cost">196,350</td>
+          <td class="cost">49,088</td>
         </tr>
         <tr>
           <td class="sn">13</td>
-          <td class="desc">Minarets — Shaft (7m × 1.5m × 1.5m × 0.2m)</td>
+          <td class="desc">Minarets — Shaft (7m × 1.5m × 0.2m)</td>
           <td>7 × 1.5 × 0.2</td>
           <td class="unit">m³</td>
           <td style="text-align:center">4</td>
@@ -1210,9 +1288,9 @@
           <td>1.5 × 1.5 × 0.2</td>
           <td class="unit">m³</td>
           <td style="text-align:center">4</td>
-          <td class="qty">0.9</td>
+          <td class="qty">1.8</td>
           <td style="text-align:right">2,500</td>
-          <td class="cost">2,250</td>
+          <td class="cost">4,500</td>
         </tr>
         <tr>
           <td class="sn">15</td>
@@ -1323,6 +1401,16 @@
           <td class="qty">63</td>
           <td style="text-align:right">1,000</td>
           <td class="cost">63,000</td>
+        </tr>
+        <tr>
+          <td class="sn">27</td>
+          <td class="desc">Architectural finishes & design allowance</td>
+          <td>Allowance</td>
+          <td class="unit">L.S</td>
+          <td style="text-align:center">1</td>
+          <td class="qty">—</td>
+          <td style="text-align:right">62,545</td>
+          <td class="cost">62,545</td>
         </tr>
       </tbody>
       <tfoot>
@@ -1453,13 +1541,13 @@
       <span class="ov-sub">used in our unit rate calculations</span>
     </div>
     <div class="overview-item">
-      <span class="ov-label">Daily Labour Cost</span>
-      <span class="ov-value">AED 692.30</span>
-      <span class="ov-sub">1,500/month ÷ 26 workers</span>
+      <span class="ov-label">Daily Crew Labour Cost</span>
+      <span class="ov-value">AED 1,200</span>
+      <span class="ov-sub">Total monthly payroll ÷ 26 working days</span>
     </div>
     <div class="overview-item">
-      <span class="ov-label">Labour cost per worker per day</span>
-      <span class="ov-value">AED 57.69</span>
+      <span class="ov-label">Worker cost per day</span>
+      <span class="ov-value">AED 46.15</span>
       <span class="ov-sub">1,200 ÷ 26 working days/month</span>
     </div>
   </div>
@@ -1559,6 +1647,10 @@
       <p class="tl-desc">Do a final walkthrough, fix anything that needs fixing, clean up the site, and hand it over. Total build time is roughly 28–41 weeks.</p>
       <div class="tl-duration">⬡ Estimated Duration: 2–3 Weeks</div>
     </div>
+
+    <div class="tl-total reveal">
+      <div class="tl-total-text">Full estimated project duration: 28–41 Weeks</div>
+    </div>
   </div>
 </section>
 </div>
@@ -1649,12 +1741,12 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 const barData = [
   { label: 'Foundation (RC)', val: 506250 },
   { label: 'Marble Flooring', val: 202500 },
-  { label: 'Dome Structure', val: 212058 },
+  { label: 'Dome Structure', val: 147263 },
   { label: 'Wall Construction', val: 468000 },
   { label: 'Windows (20 total)', val: 144000 },
   { label: 'MEP (Elec+Drain)', val: 200000 },
   { label: 'Slab', val: 82146 },
-  { label: 'Minarets', val: 23250 },
+  { label: 'Minarets', val: 25500 },
 ];
 const maxVal = Math.max(...barData.map(d => d.val));
 const bc = document.getElementById('barChart');
@@ -1686,10 +1778,10 @@ barObserver.observe(bc);
 const donutData = [
   { label: 'Foundation', val: 506250, color: '#C9A84C' },
   { label: 'Walls', val: 468000, color: '#2A5C5E' },
-  { label: 'Dome', val: 212058, color: '#8B6914' },
+  { label: 'Dome', val: 147263, color: '#8B6914' },
   { label: 'MEP Systems', val: 200000, color: '#3D7A7C' },
   { label: 'Flooring', val: 202500, color: '#5A4A2A' },
-  { label: 'Other', val: 427938, color: '#3A3530' },
+  { label: 'Other', val: 492733, color: '#3A3530' },
 ];
 const total = donutData.reduce((s, d) => s + d.val, 0);
 const cx = 80, cy = 80, r = 64, ir = 42;
